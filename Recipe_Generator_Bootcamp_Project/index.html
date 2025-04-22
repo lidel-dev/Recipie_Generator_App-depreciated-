@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assests/styles/style.css" rel="stylesheet">
+    <link rel="icon" href="./assests/images/spatula.svg">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <title>COOKULATOR9000</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- INITIAL MENU SCREEN SECTION -->
+    <section id="initial-screen-section">
+        <h1 id="initial-title-h1">COOKULATOR9000</h1>
+        <img src="/assests/images/cooker.jpg.jpg" alt="TheChef" id="chef">
+        <button id="initial-button" class="btn">CLICK TO BEGIN</button>
+        <h1 id="game-description">Get a recipe based on your level of cooking skill by taking this quiz</h1>
+        
+            <!-- HISTORY SUBSECTION -->
+            <subsection id="history-section">  
+                <span>HISTORY:</span>
+                <span id="history1">no history yet</span>
+            </subsection>
+        </section>
+        
+        <!-- MAIN GAME SECTION -->
+            <section id="game-content-section">
+                <span id="game-question"></span>
+                <button id="answer1" class="answer-button"></button>
+                <button id="answer2" class="answer-button"></button>
+                <button id="answer3" class="answer-button"></button>
+                <button id="answer4" class="answer-button"></button>
+            </section>
+        
+        <!-- GAME OVER SECTION -->
+        <section id="end-game-section">
+            <span id="score-span"></span>
+            <span id="time-score"></span>
+            <span id="correct-score"></span>
+            <span id="incorrect-score"></span>
+            
+            <span>You Got</span>
+            <span id="random-recipe-title"></span>
+            <span><img id="foodImg" src="/assests/images/loader.gif"></span>
+            <span>Ingredients</span>
+            <span id="random-recipe-ingredients"></span>
+            <span>Measurements</span>
+            <span id="random-recipe-measurements"></span>
+            <span id="instructions-span">Instructions</span>
+            <span id="random-recipe-instruction"></span>
+            
+        <span id="retry-button" class="retry">RETRY</span>
+    </section>
+
+    <script type='module' src="./assests/scripts/main.js"></script>
+</body>
+</html>
